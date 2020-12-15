@@ -33,28 +33,28 @@ sleep 5
 
 echo ' '
 echo 'Removing current nvidia prime setup if applicable, file not found can be ignored......'
-rm -rf /etc/X11/mhwd.d/nvidia.conf
-rm -rf /etc/X11/mhwd.d/nvidia.conf.nvidia-xconfig-original
-rm -rf /usr/share/sddm/scripts/Xsetup
-echo 'rm -rf /etc/X11/mhwd.d/nvidia.conf*'
-rm -rf /etc/X11/xorg.conf.d/90-mhwd.conf
-rm -rf /etc/X11/xorg.conf.d/20-intel.conf
-rm -rf /etc/X11/xorg.conf.d/20-amdgpu.conf
-rm -rf /etc/X11/xorg.conf.d/nvidia.conf
-rm -rf /etc/X11/xorg.conf.d/optimus.conf
-echo 'rm -rf /etc/X11/xorg.conf.d/90-mhwd.conf'
-rm -rf /etc/modprobe.d/mhwd-gpu.conf
-rm -rf /etc/modprobe.d/optimus.conf
-rm -rf /etc/modprobe.d/nvidia.conf
-echo 'rm -rf /etc/modprobe.d/mhwd-gpu.conf'
-rm -rf /etc/modprobe.d/nvidia-drm.conf
-rm -rf /etc/modprobe.d/nvidia.conf
-echo 'rm -rf /etc/modprobe.d/nvidia*.conf'
-rm -rf /etc/modules-load.d/mhwd-gpu.conf
-echo 'rm -rf /etc/modules-load.d/mhwd-gpu.conf'
-rm -rf /usr/local/bin/optimus.sh
-rm -rf /usr/local/share/optimus.desktop
-echo 'rm -rf /usr/local/share/optimus.desktop'
+rm -f /etc/X11/mhwd.d/nvidia.conf
+rm -f /etc/X11/mhwd.d/nvidia.conf.nvidia-xconfig-original
+rm -f /usr/share/sddm/scripts/Xsetup
+echo 'rm -f /etc/X11/mhwd.d/nvidia.conf*'
+rm -f /etc/X11/xorg.conf.d/90-mhwd.conf
+rm -f /etc/X11/xorg.conf.d/20-intel.conf
+rm -f /etc/X11/xorg.conf.d/20-amdgpu.conf
+rm -f /etc/X11/xorg.conf.d/nvidia.conf
+rm -f /etc/X11/xorg.conf.d/optimus.conf
+echo 'rm -f /etc/X11/xorg.conf.d/90-mhwd.conf'
+rm -f /etc/modprobe.d/mhwd-gpu.conf
+rm -f /etc/modprobe.d/optimus.conf
+rm -f /etc/modprobe.d/nvidia.conf
+echo 'rm -f /etc/modprobe.d/mhwd-gpu.conf'
+rm -f /etc/modprobe.d/nvidia-drm.conf
+rm -f /etc/modprobe.d/nvidia.conf
+echo 'rm -f /etc/modprobe.d/nvidia*.conf'
+rm -f /etc/modules-load.d/mhwd-gpu.conf
+echo 'rm -f /etc/modules-load.d/mhwd-gpu.conf'
+rm -f /usr/local/bin/optimus.sh
+rm -f /usr/local/share/optimus.desktop
+echo 'rm -f /usr/local/share/optimus.desktop'
 sleep 2
 
 echo 'Copying contents of ~/optimus-switch-amd-sddm/* to /etc/ .......'
