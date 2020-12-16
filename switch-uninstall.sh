@@ -13,7 +13,7 @@ rm -f /usr/local/bin/set-amd.sh
 rm -f /usr/local/bin/set-nvidia.sh
 rm -f /usr/local/bin/optimus.sh
 rm -f /usr/share/sddm/scripts/Xsetup
-rm -f /etc/switch
+rm -rf /etc/switch
 
 systemctl disable disable-nvidia.service
 rm -f /etc/systemd/system/disable-nvidia.service
